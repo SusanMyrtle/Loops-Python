@@ -1,0 +1,11 @@
+nums = int(input("Enter the Value Range: "))
+i = 0
+j = 1
+for n in range(0, nums):
+    if(n <= 1):
+      k = n
+    else:
+      k = i + j
+      i = j
+      j = k
+    print(k)
